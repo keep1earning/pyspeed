@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speed Test Server</title>  <!-- 页面标题 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">  <!-- 链接到 styles.css 文件以应用样式 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  <!-- 引入 Chart.js 库用于绘制图表 -->
+</head>
+<body>
+    <div class="container">  <!-- 主容器 -->
+        <h1>Speed Test</h1>  <!-- 标题 -->
+        <button id="start-single">Start Single-Threaded Test</button>  <!-- 单线程测试按钮 -->
+        <button id="start-multi">Start Multi-Threaded Test</button>  <!-- 多线程测试按钮 -->
+
+        <div id="speed-text">Speed: 0 MB/s</div>  <!-- 显示速度的文本区域 -->
+        <!-- 用于绘制速度图表的画布 -->
+        <div>
+            <canvas id="speedChart" width="400" height="200"></canvas>  <!-- 画布元素，用于绘制速度图表 -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>  <!-- 引入 main.js 文件以添加交互逻辑 -->
+</body>
+</html>

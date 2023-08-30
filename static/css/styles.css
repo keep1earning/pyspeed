@@ -1,0 +1,56 @@
+/* 设置页面全局样式 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 容器样式 */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* 设置 header 样式 */
+header {
+    background: #50b3a2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 主内容区域样式 */
+.main {
+    padding: 30px;
+    background: white;
+    color: #333;
+}
+
+/* 文本显示区域 */
+#speed-text {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* 按钮样式 */
+button {
+    background-color: #50b3a2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* 鼠标悬停时按钮样式 */
+button:hover {
+    background-color: #333;
+}
+
+/* 图表区域 */
+#speedChart {
+    width: 100%;
+    height: 400px;
+}
